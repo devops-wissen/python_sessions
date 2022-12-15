@@ -1,0 +1,44 @@
+print("Welcome to Pizza-hut")
+size = input("Please select the size of pizza? S M or L: ")
+if size == "S":
+  cheese = input("Any extra cheese? Y or N: ")
+  if cheese == "Y":
+    extra_toppings = input("Any extra_toppings? Y or N: ")
+    if extra_toppings == "Y":
+      bill = 149 + 29 + 49
+      print(f"your bill is {bill}")
+    else:
+      bill = 149 + 29
+      print(f"your bill is {bill}")
+  else:
+    bill = 149
+    print(f"you bill is {bill}")
+
+
+
+elif size == "M":
+  cheese = input("Any extra cheese? Y or N: ")
+  if cheese == "Y":
+    extra_toppings = input("Any extra_toppings? Y or N: ")
+    if extra_toppings == "Y":
+      bill = 199 + 29 + 49
+      print(f"your bill is {bill}")
+    else:
+      bill = 199 + 29
+      print(f"your bill is {bill}")
+  else:
+    bill = 199
+    print(f"you bill is {bill}")
+else:
+  cheese = input("Any extra cheese? Y or N: ")
+  if cheese == "Y":
+    extra_toppings = input("Any extra_toppings? Y or N: ")
+    if extra_toppings == "Y":
+      bill = 249 + 29 + 49
+      print(f"your bill is {bill}")
+    else:
+      bill = 249 + 29
+      print(f"your bill is {bill}")
+  else:
+    bill = 249
+    print(f"you bill is {bill}")

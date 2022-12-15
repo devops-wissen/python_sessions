@@ -1,0 +1,17 @@
+print("Love calculator !!!")
+b = input("Enter the boy name: ")
+g = input("Enter the girl name: ")
+b_g = b.lower() + g.lower()
+t = b_g.count("t")
+r = b_g.count("r")
+u = b_g.count("u")
+e = b_g.count("e")
+true= t + u + r + e
+l = b_g.count("l")
+o = b_g.count("o")
+v = b_g.count("v")
+E = b_g.count("e")
+love= l + o + v + E
+
+
+print(f"your score is: {true}{love}")

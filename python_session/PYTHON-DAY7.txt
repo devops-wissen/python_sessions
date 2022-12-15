@@ -1,0 +1,48 @@
+## Password generator python code easy level
+
+import random
+letters = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z']
+numbers = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9']
+symbols = ['!', '#', '$', '%', '&', '(', ')', '*', '+']
+
+print("Welcome to the PyPassword Generator!")
+nr_letters= int(input("How many letters would you like in your password?\n")) 
+nr_symbols = int(input(f"How many symbols would you like?\n"))
+nr_numbers = int(input(f"How many numbers would you like?\n"))
+password = ""
+for char in range(1, nr_letters + 1):
+  password += random.choice(letters)
+for char in range(1, nr_symbols + 1):
+  password += random.choice(symbols)
+for char in range(1, nr_numbers + 1):
+  password += random.choice(numbers)
+print(password)
+
+============================================================================================================================================================
+
+## Password generator python code hard level
+
+print("welcome to password generator")
+import random
+letters = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z']
+numbers = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9']
+symbols = ['!', '#', '$', '%', '&', '(', ')', '*', '+']
+letters_choice = int(input("how many letter do you want: "))
+number_choice = int(input("how many numbers do you want: "))
+symbol_choice = int(input("how many symbols do you want: "))
+password = []
+for char in range(1, letters_choice + 1):
+  password.append(random.choice(letters))
+for char in range(1, number_choice + 1):
+  password.append(random.choice(numbers))
+for char in range(1, symbol_choice + 1):
+  password.append(random.choice(symbols))
+print(password)
+
+random.shuffle(password)
+print(password)
+
+newpassword = ""
+for char in password:
+  newpassword = newpassword + char
+print(newpassword)

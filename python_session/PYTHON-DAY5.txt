@@ -1,0 +1,137 @@
+#Write your code below this line 👇
+
+
+rock = '''
+    _______
+---'   ____)
+      (_____)
+      (_____)
+      (____)
+---.__(___)
+'''
+
+paper = '''
+    _______
+---'   ____)____
+          ______)
+          _______)
+         _______)
+---.__________)
+'''
+
+scissors = '''
+    _______
+---'   ____)____
+          ______)
+       __________)
+      (____)
+---.__(___)
+'''
+import random
+select = input("enter 0 to select rock  1 to slect paper  2 to select scissors: ")
+list = ['rock', 'paper', 'scissors']
+computer_choice = random.choice(list)
+  
+if select == "0":
+  print(f"your choice is \n{rock}")
+  if computer_choice == "paper":
+    print(f"computer choice is \n{paper}")
+    print("computer wins")
+  elif computer_choice == "scissors":
+    print(f"computer choice is \n{scissors}")
+    print("you wins")
+  else:
+    print(f"computer choice is \n{rock}")
+    print("select again\nreplay")
+elif select == "1":
+  print(f"your choice is \n{paper}")
+  if computer_choice == "paper":
+    print(f"computer choice is \n{paper}")
+    print("select again\nreplay")
+  elif computer_choice == "scissors":
+    print(f"computer choice is \n{scissors}")
+    print("computer wins")
+  else:
+    print(f"computer choice is \n{rock}")
+    print("you win")
+else:
+  print(f"your choice is \n{scissors}")
+  if computer_choice == "paper":
+    print(f"computer choice is \n{paper}")
+    print("you win")
+  elif computer_choice == "scissors":
+    print(f"computer choice is \n{scissors}")
+    print("select again\nreplay")
+  else:
+    print(f"computer choice is \n{rock}")
+    print("computer wins")
+
+
+==========================================================================================================================================================
+
+
+rock = '''
+    _______
+---'   ____)
+      (_____)
+      (_____)
+      (____)
+---.__(___)
+'''
+
+paper = '''
+    _______
+---'   ____)____
+          ______)
+          _______)
+         _______)
+---.__________)
+'''
+
+scissors = '''
+    _______
+---'   ____)____
+          ______)
+       __________)
+      (____)
+---.__(___)
+'''
+import random
+select = input("enter 0 to select rock  1 to slect paper  2 to select scissors: ")
+list = ['rock', 'paper', 'scissors']
+computer_choice = random.choice(list)
+c2 = computer_choice
+if select == "0":
+  print(f"your choice is \n{rock}")
+  if c2 == "paper":
+    print(f"computer choice is \n{paper}")
+    print("computer wins")
+  elif c2 == "scissors":
+    print(f"computer choice is \n{scissors}")
+    print("you wins")
+  elif c2 == "rock":
+    print(f"computer choice is \n{rock}")
+    print("select again\nreplay")
+elif select == "1":
+  print(f"your choice is \n{paper}")
+  if c2 == "paper":
+    print(f"computer choice is \n{paper}")
+    print("select again\nreplay")
+  elif c2 == "scissors":
+    print(f"computer choice is \n{scissors}")
+    print("computer wins")
+  elif c2 == "rock":
+    print(f"computer choice is \n{rock}")
+    print("you win")
+else:
+  print(f"your choice is \n{scissors}")
+  if c2 == "paper":
+    print(f"computer choice is \n{paper}")
+    print("you win")
+  elif c2 == "scissors":
+    print(f"computer choice is \n{scissors}")
+    print("select again\nreplay")
+  elif c2 == "rock":
+    print(f"computer choice is \n{rock}")
+    print("computer wins")
+

@@ -1,0 +1,202 @@
+
+
+
+1. print("my name is " + input("whats your name"))  ------------ concatenation
+
+=====================================================================================================================================================
+
+2.print("Day 1 - String Manipulation") ------------------------- Debuging
+  print('String Concatenation is done with the "+" sign.')
+  print('e.g. print("Hello " + "world")')
+  print("New lines can be created with a backslash and n.")
+
+=====================================================================================================================================================
+
+3. print(len(input("whats your name"))) --------------- to find the length of the character
+
+=====================================================================================================================================================
+
+
+
+4. name = input("whats your name")   ----------------- variables concept
+   length = len (name)
+   print(length)
+
+name = hemanth ------ output:7
+
+============================================================================================================================================
+
+
+
+
+5. 	switching the values for a & B
+
+	a = input("a: ")
+	b = input("b: ")
+	
+	c = a
+	a = b
+	b = c
+
+
+
+
+	
+	print(f"a: {a}")
+	print(f"b: {b}")
+===================================================================================================================================
+
+
+
+
+6. 	print("LETS CREATE YOUR BAND-Name")    --------------- band name generator
+
+	#2. Ask the user for the city that they grew up in.
+	a = input("enter your city name: ")
+	#3. Ask the user for the name of a pet.
+	b = input("enter your pet name: ")
+	#4. Combine the name of their city and pet and show them their band name.
+	print(a + " " + b)
+
+
+
+------------------------------------------- # DAY - 2  # -----------------------------------------------------------
+
+DATA TYPES, NUMBERS, OPERATIONS, TYPE CONVERSIONS. F STRINGS
+
+TO print the particular letter in the word
+print("HELLO"[0-9]) -------- 0 indicates first letter, 1- indicates second letter .....
+
+
+
+
+1.Python script to add two numbers:  
+
+ex: input: 45
+    output: 9 
+
+two_digit_number = input("ENTER A two digit NUMBER: ")
+x = two_digit_number[0]
+y = two_digit_number[1]
+result = int(x) + int(y)
+print(result)
+
+mobile_number = input ("Enter your mobile number ")
+a = mobile_number[0]
+b = mobile_number[1]
+c = mobile_number[2]
+d = mobile_number[3]
+e = mobile_number[4]
+f = mobile_number[5]
+g = mobile_number[6]
+h = mobile_number[7]
+i = mobile_number[8]
+j = mobile_number[9]
+result = int(a) + int(b) + int(c) + int(d) + int(e) + int(f) + int(g) + int(h) + int(i) + int(j)
+print(result)
+
+=====================================================================================================================================================
+
+2.  BMI CALCULATOR =  WEIGHT/HEIGHT^2
+
+    
+    height = input("enter your height in m: ")
+    weight = input("enter your weight in kg: ")
+    
+
+    result = int(weight) /  float(height) ** 2
+    result_as_int = int(result)
+    print(result)
+    print(result_as_int)
+
+
+A = input("enter first digit ")
+B = input("enter second digit ")
+result = int(A) ** 2 + int(B) ** 2 + 2 * int(A) * int(B)
+print(result)
+
+======================================================================================================================================================
+
+3. rounding the number to closest value
+
+print(round(22/7, 4)) ---- , 4 indicates it has to print 4 decimal points
+
+print(int(22/7)) ---- it gives only an interger without any decimals
+
+print(8 // 3) -- aslo gives us integer
+
+while
+
+print(8 // 3) -- gives us a floating point
+
+
+we can find out the type by using
+
+print(type(8 // 3)) or print(type(8 / 3))    output will be  int    float
+=======================================================================================================================================================
+
+
+f-string
+
+suppose if we have different data types to be printed in a single line. we dont need to mention int, str, bollean, float
+
+we can use
+
+score = 0
+height = 1.9
+winning = true
+
+print(f"your score is {score}, your height is {height}, your are winning {winning}")
+
+=========================================================================================================================================================
+
+Suppose if our age we live is 90 years
+
+to calculate the days weeks and months left in our life
+
+age = input("enter your age: ")
+result = 90 - int(age)
+weeks = int(result) * 52
+days = int(result) * 365
+months = int(result) * 12
+print(f"you have {weeks} weeks left, {days} days left, {months} months left in your life")
+
+==========================================================================================================================================================
+
+
+print("Welcome to the tip calculator!")
+
+bill = float(input("What was the total bill? $"))
+tip = int(input("How much tip would you like to give? 10, 12, or 15? "))
+people = int(input("How many people to split the bill?"))
+
+tip_as_percent = tip / 100
+total_tip_amount = bill * tip_as_percent
+total_bill = bill + total_tip_amount
+bill_per_person = total_bill / people
+final_amount = round(bill_per_person, 2)
+
+print(f"Each person should pay: ${final_amount}")
+
+==========================================================================================================================================================
+
+print ("welcome to the money splitter app: ")
+
+BILL = input("enter the bill amount: ")
+TIP = input("enter the tip amount: ")
+PPL = input("how many people wants to share: ")
+
+total = float(BILL) + int(TIP)
+total_as_int = int(total)
+share = int(total_as_int / int(PPL))
+
+
+print (f"each person share is {share}")
+
+
+===========================================================================================================================================================
+
+
+
+
+

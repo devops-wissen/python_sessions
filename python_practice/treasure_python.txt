@@ -1,0 +1,41 @@
+Small Pizza: 149
+
+
+
+Medium Pizza: 199
+
+
+
+Large Pizza: 249
+
+
+
+extra cheese for Pizza: 29
+
+
+
+additional toppings for any size pizza: 49
+
+
+print('Welcome to Treasure Land')
+print('Your mission is to find the treasure.')
+direction = str(input('Select the direction: R or L :'))
+
+
+
+if direction == "L":
+  swim_wait = str(input('Enter your preference: swim or wait: '))
+  if swim_wait == "wait":
+    colour = str(input('Select your door colour: R or B or Y: '))
+    if colour == "R":
+      print('Burned by fire. Game over. ')
+    elif colour == "B":
+      print('Eaten by beasts. Game over. ')
+    elif colour == "Y":
+      print('You Won. ')
+    else:
+      print('Game over. ')
+  else:
+    print('Attacked by trout. Game over')
+else:
+  print('Fall into a hole. Game over')

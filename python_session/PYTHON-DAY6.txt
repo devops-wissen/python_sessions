@@ -1,0 +1,155 @@
+## LOOPS
+
+FOR LOOP
+
+NAMES = ['ram', 'laxman', 'sita', 'geeta']
+for name in NAMES:
+  print(name)
+  print(name + " reddy")
+
+==========================================================================================================================================================
+
+## to print average student height using for loop
+
+student_height = input("enter student heights seperated by spaces: ").split()
+print(student_height)
+for n in range (0, len(student_height)):
+  student_height[n] = int(student_height[n])
+
+
+a = int(len(student_height))
+b = int(sum(student_height))
+average_student_height = round(b / a)
+print(average_student_height)
+
+
+
+average = input("enter numbers seperated by spaces: ").split()
+print(average)
+for n in range(0, len(average)):
+  average[n] = int(average[n])
+total = 0
+
+for each_number in average:
+  total = total + each_number
+print(total)
+
+length = 0
+for occurance in average:
+  length += 1
+print(length)
+
+total_average = round(total / length)
+print(total_average)
+
+===========================================================================================================================================================
+## for loop to print maximun number
+
+scores = input("enter numbers seperated by spaces: ").split()
+print(scores[0])
+for n in range(0, len(scores)):
+  scores[n] = int(scores[n])
+highest = scores[0]
+for high in scores:
+  if high > highest:
+    highest = high
+print(highest)
+
+## to print maximum and minimum value from a list
+list = ['1', '2', '3']
+print(max(list))
+print(min(list))
+
+===========================================================================================================================================================
+
+to count numbers from 1 to 100
+
+total = 0
+for n in range(1, 101):
+  total += n
+print(total)
+
+===========================================================================================================================================================
+  
+## to print number from 1 to 100
+ 
+for n in range(1, 101):
+  print(n)
+
+===========================================================================================================================================================
+
+## code to add even numbers from 2 to 100
+
+total = 0
+for n in range(2, 101, 2):
+  total = total + n
+print(total)
+
+total2 = 0
+for n in range(1, 101):
+  if n % 2 == 0:
+    total2 += n
+print(total2)
+
+===========================================================================================================================================================
+
+## print 1 - 100 numbers
+
+if number is divisible by 3 print fizz
+if number is divisible by 5 print buzz
+if number is divisible by 3 & 5 print fizzbuzz
+
+for n in range(1, 101):
+  if (n % 3 == 0) and (n %5 == 0):
+    print("fizzbuzz")
+  elif n % 3 ==0:
+    print("fizz")
+  elif n % 5 == 0:
+    print("buzz")
+  else:
+    print(n)
+
+===========================================================================================================================================================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

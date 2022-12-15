@@ -1,0 +1,183 @@
+#IF ELSE example
+
+print("welcome to the ride ")
+height = int(input("enter your height: "))
+
+if height >= 120:
+	print("you can ride")
+else:
+	print("sorry you cant ride")
+
+===========================================================================================================================================================
+
+#CODE TO FIND OUT EVEN OR ODD NUMBER
+
+NUMBER = int(input("enter your number: "))
+result = NUMBER % 2
+
+if result == 1:
+	print("this is an odd number")
+else:
+	print("this is an even number")
+
+==============================================================================================================================================================
+
+## NESTED IF ELSE EXAMPLE
+
+print("welcome to the ride ")
+height = int(input("enter your height: "))
+
+if height >= 120:
+	print("you can ride")
+	age = int(input("enter your age: "))
+	if age >= 18:
+		print("pay 100 rs/-")
+	else:
+		print("pay 50 rs/-")
+else:
+	print("sorry you cant ride")
+
+============================================================================================================================================================
+
+## IF ELIF ELSE EXAMPLE
+
+print("welcome to the ride ")
+height = int(input("enter your height: "))
+
+if height >= 120:
+	print("you can ride")
+	age = int(input("enter your age: "))
+	if age < 12:
+		print("pay 25 rs/-")
+	elif age =< 18:
+		print("pay 50 rs/-")
+	else:
+		print("pay 100 rs/-")
+else:
+	print("sorry you cant ride")
+
+============================================================================================================================================================
+# BMI 2.0
+
+18.5 ---- underweight
+25 ---- normal weight
+30 ---- overweight
+35 ---- obese
+above 35 ---- clinically obese
+
+height = float(input("enter your height in m: "))
+weight = float(input("enter your weight in kgs: "))
+
+bmi = round(weight / height ** 2)
+
+if bmi < 18.5:
+	print(f"your bmi is {bmi}, your are underweight")
+elif bmi < 25:
+	print(f"your bmi is {bmi}, your are normalweight")
+elif bmi < 30:
+	print(f"your bmi is {bmi}, your are overweight")
+elif bmi < 35:
+	print(f"your bmi is {bmi}, your are obese")
+else:
+	print(f"your bmi is {bmi}, your are clinically obese")
+============================================================================================================================================================
+
+# to check leap year or not
+
+year = int(input("enter the year: "))
+
+if year % 4 == 0:
+	if year % 100 == 0:
+		if year % 400 == 0:
+			print("its a leap year")
+		else:
+			print("its not a leap year")
+	else:
+		print("its a leap year")
+else:
+	print("its not a leap year")
+
+===========================================================================================================================================================
+
+multiple if statements & nested if example
+
+print("welcome to the roller-coaster ride!")
+h = int(input("please enter your height: "))
+if h > 120:
+  age = int(input("please enter your age: "))
+  if age > 18:
+    bill = 150
+    print("your bill is 150/-")
+  else:
+    bill = 80
+    print("your bill is 80/-")
+  want_photo = str(input("if you want to have a picture enter Y or else enter N: "))
+  if want_photo == "Y":
+    bill += 40
+    print (f"your final bill is ${bill}")
+else:
+  print("you are not eligible to ride")
+
+
+=======================================================================================================================================================
+
+Small Pizza: 149
+
+Medium Pizza: 199
+
+Large Pizza: 249
+
+extra cheese for Small Pizza: 29
+
+extra cheese for Medium or Large Pizza: 49
+
+additional toppings for any size pizza: 49
+
+
+
+print("welcome to the E-pizza-store")
+size = input("Please select the size of pizza? S M or L: ")
+cheese = input("want additional cheese? Y or N: ")
+toppings = input("want additional toppings? Y or N: ")
+if size == "S":
+  if cheese == "Y":
+    if toppings == "Y":
+      bill = 149 + 29 + 49
+      print(f"your bill is rs.{bill}")
+    else:
+      bill = 149 + 29
+      print(f"your bill is rs.{bill}")
+  else:
+    bill = 149
+    print(f"your bill is rs.{bill}")
+elif size == "M":
+  if cheese == "Y":
+    if toppings == "Y":
+      bill = 199 + 49 + 49
+      print(f"your bill is rs.{bill}")
+    else:
+      bill = 199 + 49
+      print(f"your bill is rs.{bill}")
+  else:
+    bill = 199
+    print(f"your bill is rs.{bill}")
+else:
+  if cheese == "Y":
+    if toppings == "Y":
+      bill = 249 + 49 + 49
+      print(f"your bill is rs.{bill}")
+    else:
+      bill = 249 + 49
+      print(f"your bill is rs.{bill}")
+  else:
+    bill = 249
+    print(f"your bill is rs.{bill}")
+
+===========================================================================================================================================================
+
+
+
+
+
+
+

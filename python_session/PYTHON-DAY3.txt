@@ -1,0 +1,98 @@
+## LOVE CALCULATOR 
+
+print("welcome to love calculator: ")
+
+a = input("enter the boy name: ")
+b = input("enter the girl name: ")
+
+boy = a.lower()
+girl = b.lower()
+
+first = boy.count("t") + girl.count("t")
+second = boy.count("r") + girl.count("r")
+third = boy.count("u") + girl.count("u")
+fourth = boy.count("e") + girl.count("e")
+
+fifth = boy.count("l") + girl.count("l")
+sixth = boy.count("o") + girl.count("o")
+seventh = boy.count("v") + girl.count("v")
+eighth = boy.count("e") + girl.count("e")
+
+first_number = int(first) + int(second) + int(third) + int(fourth)
+second_number = int(fifth) + int(sixth) + int(seventh) + int(eighth)
+
+print(f"your score is {first_number}{second_number}")
+
+========================================================================================================================================================
+
+print("welcome to love calculator: ")
+
+a = input("enter the boy name: ")
+b = input("enter the girl name: ")
+
+boy = a.lower() + b.lower()
+
+t = boy.count("t") 
+r = boy.count("r") 
+u = boy.count("u") 
+e = boy.count("e") 
+
+l = boy.count("l") 
+o = boy.count("o") 
+v = boy.count("v") 
+e = boy.count("e")
+
+true = t + r + u + e
+love = l + o + v + e
+
+print(f"your score is {true}{love}")
+
+
+============================================================================================================================================================
+
+## story - adventure - treasure - hunt
+
+print ("welcome to treasure hunt")
+direction = input("you are at a cross road. Please select left or right: ")
+if direction == "left":
+  river = input("you are at a river? swim or wait: ")
+  if river == "wait":
+    doors = input("please select a door? red blue yellow: ")
+    if doors == "red":
+      print("game over")
+    elif doors == "yellow":
+      print("you found the treasure..!")
+    else:
+      print("you lost the game")
+  else:
+    print("you lost the game")
+else:
+  print("you lost the game")
+
+
+============================================================================================================================================================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
